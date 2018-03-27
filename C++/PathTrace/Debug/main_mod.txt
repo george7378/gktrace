@@ -1,0 +1,41 @@
+[MAT]
+light : null, (0, 0, 0), (3, 3, 3), 1, 0, LGHT;
+metal_silver : null, (0.8, 0.8, 0.8), (0, 0, 0), 1, 0, SPEC;
+metal_dull_silver : null, (0.5, 0.5, 0.5), (0, 0, 0), 1, 0.15, GLSP;
+frosty_glass : null, (0.9, 0.9, 0.9), (0, 0, 0), 1.8, 0.15, GLRF;
+diff_gray : null, (0.55, 0.55, 0.55), (0, 0, 0), 1, 0, DIFF;
+diff_red : null, (0.75, 0.25, 0.25), (0, 0, 0), 1, 0, DIFF;
+diff_green : null, (0.25, 0.75, 0.25), (0, 0, 0), 1, 0, DIFF;
+diff_blue : null, (0.25, 0.25, 0.75), (0, 0, 0), 1, 0, DIFF;
+diff_yellow : null, (0.75, 0.75, 0.25), (0, 0, 0), 1, 0, DIFF;
+[/MAT]
+
+[TEX]
+[/TEX]
+
+[OBJ]
+s1 : Sphere, (1, 1, -1), 1, metal_silver;
+s2 : Sphere, (-1, 1, 1), 1, diff_gray;
+s3 : Sphere, (2, 2, 2), 2, frosty_glass;
+
+p1 : Plane, (0, -1, 0), (0, 0, 0), metal_dull_silver, 2.5, 2.5;
+p2 : Plane, (0, 1, 0), (0, 5, 0), diff_green, 1, 1;
+p3 : Plane, (-1, 0, 0), (-5, 0, 0), light, 1, 1;
+p4 : Plane, (1, 0, 0), (5, 0, 0), diff_red, 1, 1;
+p5 : Plane, (0, 0, -1), (0, 0, -5), diff_yellow, 1, 1;
+p6 : Plane, (0, 0, 1), (0, 0, 5), diff_blue, 1, 1;
+[/OBJ]
+
+[CAM]
+c1 : (-4, 3, -5), (0.4, -0.1, 0.5), (0, 1, 0), 50;
+[/CAM]
+
+[PROP]
+Width = 640;
+Height = 480;
+NumSamples = 500;
+BGC = (0, 0, 0);
+Cutoff = 4e-3;
+Bias = 1e-3;
+RussianRoulette = 0;
+[/PROP]

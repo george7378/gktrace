@@ -1,0 +1,30 @@
+[MAT]
+light : null, (0, 0, 0), (3, 3, 3), 1, 0, LGHT;
+ring : null, (0.8, 0.8, 0.2), (0, 0, 0), 1, 0, SPEC;
+diff_wall : null, (0.4, 0.4, 0.4), (0, 0, 0), 1, 0, DIFF;
+diff_floor : null, (0.5, 0.5, 0.2), (0, 0, 0), 1, 0, DIFF;
+[/MAT]
+
+[OBJ]
+m1 : Mesh, (0, 0, 0), meshes/ring.txt, ring;
+
+p1 : Plane, (0, -1, 0), (0, 0, 0), diff_floor, 2.5, 2.5;
+p2 : Plane, (0, 1, 0), (0, 10, 0), diff_wall, 1, 1;
+p3 : Plane, (-1, 0, 0), (-5, 0, 0), light, 1, 1;
+p4 : Plane, (1, 0, 0), (5, 0, 0), diff_wall, 1, 1;
+p5 : Plane, (0, 0, -1), (0, 0, -5), diff_wall, 1, 1;
+p6 : Plane, (0, 0, 1), (0, 0, 5), diff_wall, 1, 1;
+[/OBJ]
+
+[CAM]
+c1 : (-4, 3, -4), (0.5, -0.1, 0.5), (0, 1, 0), 75;
+[/CAM]
+
+[PROP]
+Width = 640;
+Height = 480;
+NumSamples = 100;
+BGC = (0, 0, 0);
+Cutoff = 4e-3;
+Bias = 1e-3;
+[/PROP]

@@ -1,0 +1,30 @@
+[MAT]
+light : null, (0, 0, 0), (3, 3, 3), 1, 0, LGHT;
+glass : null, (0.8, 0.8, 0.8), (0, 0, 0), 1.45, 0, REFR;
+diff_wall : null, (0.5, 0.5, 0.08), (0, 0, 0), 1, 0, DIFF;
+gloss_floor : null, (0.42, 0.26, 0.2), (0, 0, 0), 1, 0.1, GLSP;
+[/MAT]
+
+[OBJ]
+m1 : Mesh, (0, 3, 0), meshes/diamond.txt, glass;
+
+p1 : Plane, (0, -1, 0), (0, 0, 0), gloss_floor, 2.5, 2.5;
+p2 : Plane, (0, 1, 0), (0, 10, 0), light, 1, 1;
+p3 : Plane, (-1, 0, 0), (-5, 0, 0), diff_wall, 1, 1;
+p4 : Plane, (1, 0, 0), (5, 0, 0), diff_wall, 1, 1;
+p5 : Plane, (0, 0, -1), (0, 0, -5), diff_wall, 1, 1;
+p6 : Plane, (0, 0, 1), (0, 0, 5), diff_wall, 1, 1;
+[/OBJ]
+
+[CAM]
+c1 : (-4, 3, -4), (0.5, -0.1, 0.5), (0, 1, 0), 90;
+[/CAM]
+
+[PROP]
+Width = 640;
+Height = 480;
+NumSamples = 100;
+BGC = (0, 0, 0);
+Cutoff = 4e-3;
+Bias = 1e-3;
+[/PROP]
