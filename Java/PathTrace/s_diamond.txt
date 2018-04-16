@@ -8,12 +8,12 @@ gloss_floor : null, (0.42, 0.26, 0.2), (0, 0, 0), 1, 0.1, GLSP;
 [OBJ]
 m1 : Mesh, (0, 3, 0), meshes/diamond.txt, glass;
 
-p1 : Plane, (0, -1, 0), (0, 0, 0), gloss_floor, 2.5, 2.5;
-p2 : Plane, (0, 1, 0), (0, 10, 0), light, 1, 1;
-p3 : Plane, (-1, 0, 0), (-5, 0, 0), diff_wall, 1, 1;
-p4 : Plane, (1, 0, 0), (5, 0, 0), diff_wall, 1, 1;
-p5 : Plane, (0, 0, -1), (0, 0, -5), diff_wall, 1, 1;
-p6 : Plane, (0, 0, 1), (0, 0, 5), diff_wall, 1, 1;
+p1 : Plane, (0, -1, 0), (0, 0, 0), gloss_floor;
+p2 : Plane, (0, 1, 0), (0, 10, 0), light;
+p3 : Plane, (-1, 0, 0), (-5, 0, 0), diff_wall;
+p4 : Plane, (1, 0, 0), (5, 0, 0), diff_wall;
+p5 : Plane, (0, 0, -1), (0, 0, -5), diff_wall;
+p6 : Plane, (0, 0, 1), (0, 0, 5), diff_wall;
 [/OBJ]
 
 [CAM]

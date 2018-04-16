@@ -8,12 +8,12 @@ diff_floor : null, (0.5, 0.5, 0.2), (0, 0, 0), 1, 0, DIFF;
 [OBJ]
 m1 : Mesh, (0, 0, 0), meshes/ring.txt, ring;
 
-p1 : Plane, (0, -1, 0), (0, 0, 0), diff_floor, 2.5, 2.5;
-p2 : Plane, (0, 1, 0), (0, 10, 0), diff_wall, 1, 1;
-p3 : Plane, (-1, 0, 0), (-5, 0, 0), light, 1, 1;
-p4 : Plane, (1, 0, 0), (5, 0, 0), diff_wall, 1, 1;
-p5 : Plane, (0, 0, -1), (0, 0, -5), diff_wall, 1, 1;
-p6 : Plane, (0, 0, 1), (0, 0, 5), diff_wall, 1, 1;
+p1 : Plane, (0, -1, 0), (0, 0, 0), diff_floor;
+p2 : Plane, (0, 1, 0), (0, 10, 0), diff_wall;
+p3 : Plane, (-1, 0, 0), (-5, 0, 0), light;
+p4 : Plane, (1, 0, 0), (5, 0, 0), diff_wall;
+p5 : Plane, (0, 0, -1), (0, 0, -5), diff_wall;
+p6 : Plane, (0, 0, 1), (0, 0, 5), diff_wall;
 [/OBJ]
 
 [CAM]

@@ -14,12 +14,12 @@ s1 : Sphere, (1, 1, -1), 1, metal_silver;
 s2 : Sphere, (-1, 1, 1), 1, glass;
 s3 : Sphere, (2, 2, 2), 2, diff_white;
 
-p1 : Plane, (0, -1, 0), (0, 0, 0), diff_white, 2.5, 2.5;
-p2 : Plane, (0, 1, 0), (0, 10, 0), light, 1, 1;
-p3 : Plane, (-1, 0, 0), (-5, 0, 0), diff_green, 1, 1;
-p4 : Plane, (1, 0, 0), (5, 0, 0), diff_red, 1, 1;
-p5 : Plane, (0, 0, -1), (0, 0, -5), diff_blue, 1, 1;
-p6 : Plane, (0, 0, 1), (0, 0, 5), metal_dull_silver, 1, 1;
+p1 : Plane, (0, -1, 0), (0, 0, 0), diff_white;
+p2 : Plane, (0, 1, 0), (0, 10, 0), light;
+p3 : Plane, (-1, 0, 0), (-5, 0, 0), diff_green;
+p4 : Plane, (1, 0, 0), (5, 0, 0), diff_red;
+p5 : Plane, (0, 0, -1), (0, 0, -5), diff_blue;
+p6 : Plane, (0, 0, 1), (0, 0, 5), metal_dull_silver;
 [/OBJ]
 
 [CAM]
