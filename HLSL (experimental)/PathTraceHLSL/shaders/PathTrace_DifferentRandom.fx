@@ -149,7 +149,7 @@ Camera Camera_new(float3 p, float3 l, float3 u, float fy)
 //Global functions and variables//
 //////////////////////////////////
 const static float INFINITY = 1e8;
-const static float PI = 3.14159265358979323846f;
+const static float PI = 3.141593;
 float RandomModulator;
 
 float random(float2 uv)
@@ -267,8 +267,7 @@ float3 trace(float3 rayorig, float3 raydir)
 		float3 chit = nearestShapeType == 1 ? Sphere_getsurfacecolour(scene_Spheres[nearestShapeIndex], phit) : Plane_getsurfacecolour(scene_Planes[nearestShapeIndex], phit);
 		rayColour *= chit;
 
-		float3 nhit = nearestShapeType == 1 ? Sphere_getnormal(scene_Spheres[nearestShapeIndex], phit) : Plane_getnormal(scene_Planes[nearestShapeIndex]);
-		normalize(nhit);
+		float3 nhit = normalize(nearestShapeType == 1 ? Sphere_getnormal(scene_Spheres[nearestShapeIndex], phit) : Plane_getnormal(scene_Planes[nearestShapeIndex]));
 		bool inside = false;
 		if (dot(raydir, nhit) > 0){nhit = -nhit; inside = true;}
 
