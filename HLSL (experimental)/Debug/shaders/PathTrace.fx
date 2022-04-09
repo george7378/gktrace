@@ -195,18 +195,18 @@ static Sphere scene_Spheres[N_SPHERES] =
 {
 	Sphere_new(Material_new(float3(0.8f, 0.8f, 0.8f), float3(0, 0, 0), 1, 0, 2), float3(1, 1, -1), 1),
 	Sphere_new(Material_new(float3(0.9f, 0.9f, 0.9f), float3(0, 0, 0), 1.8f, 0, 4), float3(-1, 1, 1), 1),
-	Sphere_new(Material_new(float3(0.75f, 0.75f, 0.75f), float3(0, 0, 0), 1, 0, 1), float3(2, 2, 2), 2),
+	Sphere_new(Material_new(float3(0.65f, 0.65f, 0.65f), float3(0, 0, 0), 1, 0, 1), float3(2, 2, 2), 2),
 };
 
 const static uint N_PLANES = 6;
 static Plane scene_Planes[N_PLANES] =
 {
-	Plane_new(Material_new(float3(0.75f, 0.25f, 0), float3(0, 0, 0), 1, 0, 1), float3(0, -1, 0), float3(0, 0, 0), 2.5f, 2.5f),
-	Plane_new(Material_new(float3(0.25f, 0.75f, 0.25f), float3(0, 0, 0), 1, 0, 1), float3(0, 1, 0), float3(0, 5, 0), 1, 1),
+	Plane_new(Material_new(float3(0.75f, 0.5f, 0.25f), float3(0, 0, 0), 1, 0, 1), float3(0, -1, 0), float3(0, 0, 0), 2.5f, 2.5f),
+	Plane_new(Material_new(float3(0.75f, 0.75f, 0.75f), float3(0, 0, 0), 1, 0, 1), float3(0, 1, 0), float3(0, 5, 0), 1, 1),
 	Plane_new(Material_new(float3(0, 0, 0), float3(3, 3, 3), 1, 0, 6), float3(-1, 0, 0), float3(-5, 0, 0), 1, 1),
-	Plane_new(Material_new(float3(0.75f, 0.25f, 0.25f), float3(0, 0, 0), 1, 0, 1), float3(1, 0, 0), float3(5, 0, 0), 1, 1),
-	Plane_new(Material_new(float3(0.25f, 0.25f, 0.75f), float3(0, 0, 0), 1, 0, 1), float3(0, 0, -1), float3(0, 0, -5), 1, 1),
-	Plane_new(Material_new(float3(0.5f, 0.5f, 0.5f), float3(0, 0, 0), 1, 0, 2), float3(0, 0, 1), float3(0, 0, 5), 1, 1),
+	Plane_new(Material_new(float3(0.75f, 0.75f, 0.75f), float3(0, 0, 0), 1, 0, 1), float3(1, 0, 0), float3(5, 0, 0), 1, 1),
+	Plane_new(Material_new(float3(0.5f, 0.5f, 0.75f), float3(0, 0, 0), 1, 0, 1), float3(0, 0, -1), float3(0, 0, -5), 1, 1),
+	Plane_new(Material_new(float3(0.5f, 0.5f, 0.5f), float3(0, 0, 0), 1, 0.05f, 3), float3(0, 0, 1), float3(0, 0, 5), 1, 1),
 };
 
 //////////////////
