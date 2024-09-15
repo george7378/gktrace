@@ -5,9 +5,8 @@ The Java version is the primary version as it supports 3D meshes and seems to ou
 
 You can also find a script to export meshes from Blender in the format accepted by the Java program.
 
-![Ring mesh](https://raw.githubusercontent.com/george7378/gktrace/master/_img/1.png)
-![Path tracing with textures](https://raw.githubusercontent.com/george7378/gktrace/master/_img/2.png)
-![Diamond mesh](https://raw.githubusercontent.com/george7378/gktrace/master/_img/3.png)
-![Enclosed box](https://raw.githubusercontent.com/george7378/gktrace/master/_img/4.png)
-![Ray tracing with textures](https://raw.githubusercontent.com/george7378/gktrace/master/_img/5.png)
-![HLSL GPU tracer](https://raw.githubusercontent.com/george7378/gktrace/master/_img/6.png)
+![Ring mesh](https://raw.githubusercontent.com/george7378/gktrace/master/misc/readme/1.png)
+![Path tracing with textures](https://raw.githubusercontent.com/george7378/gktrace/master/misc/readme/2.png)
+![Diamond mesh](https://raw.githubusercontent.com/george7378/gktrace/master/misc/readme/3.png)
+![Enclosed box](https://raw.githubusercontent.com/george7378/gktrace/master/misc/readme/4.png)
+![Ray tracing with textures](https://raw.githubusercontent.com/george7378/gktrace/master/misc/readme/5.png)
